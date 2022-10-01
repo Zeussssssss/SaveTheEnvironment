@@ -1,11 +1,11 @@
 import Card from "../UI/Card";
-import React, { useState } from "react";
+import React from "react";
 
 const ScoreDisplay = (props) => {
   return (
-    <Card className="scoreSection">
+    <Card className="score-section">
       <ScoreCircle score={props.score} />
-      <h1>{props.name}</h1>
+      <h1> {props.name} </h1>
     </Card>
   );
 };
