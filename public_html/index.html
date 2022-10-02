@@ -28,7 +28,7 @@
   </head>
   <body>
     <header>
-      <h1><div id="logo">SaveTheEnvironment</div></h1>
+      <h1><div id="logo">EnvironmentGradient</div></h1>
     </header>
     <main>
       <i
@@ -39,8 +39,34 @@
       <form>
         <h1>KEY</h1>
         <hr />
-        <h4>Type of Pollution</h4>
-        <h4>Species</h4>
+        <h3>Type of Pollution</h3>
+        <input type="radio" id="air" class="pollution" />
+        <label for="air" class="pollution"> Air Pollution </label>
+        <input type="radio" id="water" class="pollution" />
+        <label for="water" class="pollution"> Water Pollution </label>
+        <h3>Animal Categories</h3>
+        <input type="checkbox" id="amphibians" />
+        <label for="amphibians" class="animals"> Amphibians </label>
+        <br />
+        <input type="checkbox" id="birds" />
+        <label for="birds" class="animals"> Birds </label>
+        <br />
+        <input type="checkbox" id="fishes" />
+        <label for="fishes" class="animals"> Fishes </label>
+        <br />
+        <input type="checkbox" id="insects" />
+        <label for="insects" class="animals"> Insects </label>
+        <br />
+        <input type="checkbox" id="mammals" />
+        <label for="mammals" class="animals"> Mammals </label>
+        <br />
+        <input type="checkbox" id="reptiles" />
+        <label for="reptiles" class="animals"> Reptiles </label>
+        <br />
+        <h3>Date</h3>
+        <input type="date" />
+        <br />
+        <button type="submit" class="plot">PLOT</button>
       </form>
     </main>
     <script
