@@ -4,12 +4,76 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Save the Environment</title>
+    <meta name="description" content="Save the environment" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <script
+      type="text/javascript"
+      src="https://polyfill.io/v3/polyfill.min.js?features=default"
+    ></script>
+    <script>
+      let map;
+      let lati = 39.97;
+      let long = -95.77;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          // This describes the location of the map by lat and long
+          center: { lat: lati, lng: long },
+          zoom: 3.5,
+        });
+      }
+    </script>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhDc95h5cAPn76u6ngD8MUrZHZtVZqFkM&callback=initMap"></script>
+    <header>
+      <h1><div id="logo">EnvironmentGradient</div></h1>
+    </header>
+    <main>
+      <i
+        >There is a strong correlation between pollution and the growing decline
+        in animal polpulations, and these maps helps us visualize that</i
+      >
+      <div id="map"></div>
+      <form>
+        <h1>KEY</h1>
+        <hr />
+        <h3>Type of Pollution</h3>
+        <input type="radio" id="air" class="pollution" />
+        <label for="air" class="pollution"> Air Pollution </label>
+        <input type="radio" id="water" class="pollution" />
+        <label for="water" class="pollution"> Water Pollution </label>
+        <h3>Animal Categories</h3>
+        <input type="checkbox" id="amphibians" />
+        <label for="amphibians" class="animals"> Amphibians </label>
+        <br />
+        <input type="checkbox" id="birds" />
+        <label for="birds" class="animals"> Birds </label>
+        <br />
+        <input type="checkbox" id="fishes" />
+        <label for="fishes" class="animals"> Fishes </label>
+        <br />
+        <input type="checkbox" id="insects" />
+        <label for="insects" class="animals"> Insects </label>
+        <br />
+        <input type="checkbox" id="mammals" />
+        <label for="mammals" class="animals"> Mammals </label>
+        <br />
+        <input type="checkbox" id="reptiles" />
+        <label for="reptiles" class="animals"> Reptiles </label>
+        <br />
+        <h3>Date</h3>
+        <input type="date" />
+        <br />
+        <button type="submit" class="plot">PLOT</button>
+      </form>
+    </main>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXddHJuNJGjIUV3ZWvSkZPEue7EUipzF0&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>

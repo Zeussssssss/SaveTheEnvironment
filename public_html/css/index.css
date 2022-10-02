@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+/* invisible scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 12vh;
+  background-color: #3d775b;
+}
+
+#logo {
+  display: inline;
+  float: left;
+  padding-left: 4vh;
+  font-weight: 800;
+  font-size: 8vh;
+  color: white;
+}
+
+main {
+  display: block;
+  position: absolute;
+  top: 15vh;
+  height: 85vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#map {
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 7vw;
+  padding: 7vh;
+  height: 40vh;
+  width: 40vw;
+  border-radius: 5vh;
+}
+
+i {
+  font-size: 3vh;
+  padding: 1vh;
+}
+
+form {
+  position: absolute;
+  margin-right: 20vw;
+  margin-top: 5vh;
+  margin-left: 60vw;
+  padding: 8vh;
+  padding-top: 2vh;
+  height: 60vh;
+  width: 25vw;
+  background-color: blanchedalmond;
+  border-radius: 5vh;
+}
+
+h3 {
+  margin-top: 1.5vh;
+  margin-bottom: 1vh;
+}
+
+.pollution {
+  margin-top: 2vh;
+  font-size: 3vh;
+}
+.animals {
+  margin-left: 3vw;
+  margin-top: 1vh;
+}
+.plot {
+  background-color: #e26d5c;
+  color: white;
+  font-size: 3vh;
+  font-weight: 600;
+  padding-top: 2.5vh;
+  border-style: none;
+  padding-bottom: 3vh;
+  margin: 2vh;
+  padding-left: 5.5vw;
+  padding-right: 5.5vw;
+  border-radius: 2vw;
+}
