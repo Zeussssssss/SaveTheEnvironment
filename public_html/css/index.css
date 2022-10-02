@@ -47,13 +47,31 @@ main {
 #map {
   position: absolute;
   margin-top: 5vh;
-  margin-left: 27vw;
+  margin-left: 7vw;
   padding: 7vh;
   height: 40vh;
   width: 40vw;
   border-radius: 5vh;
 }
+
 i {
   font-size: 3vh;
   padding: 1vh;
+}
+
+form {
+  position: absolute;
+  margin-right: 20vw;
+  margin-top: 5vh;
+  margin-left: 60vw;
+  padding: 8vh;
+  padding-top: 2vh;
+  height: 60vh;
+  width: 25vw;
+  background-color: blanchedalmond;
+  border-radius: 5vh;
+}
+
+h4 {
+  margin-top: 1.5vh;
 }

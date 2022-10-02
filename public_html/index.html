@@ -11,6 +11,19 @@
       type="text/javascript"
       src="https://polyfill.io/v3/polyfill.min.js?features=default"
     ></script>
+    <script>
+      let map;
+      let lati = 39.97;
+      let long = -95.77;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          // This describes the location of the map by lat and long
+          center: { lat: lati, lng: long },
+          zoom: 3.5,
+        });
+      }
+    </script>
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -22,23 +35,12 @@
         >There is a strong correlation between pollution and the growing decline
         in animal polpulations, and these maps helps us visualize that</i
       >
-      <div id = "card"></div><div id="map"></div></div>
-      <script>
-        let map;
-        let lati = 39.97;
-        let long = -95.77;
-
-        function initMap() {
-
-          map = new google.maps.Map(document.getElementById("map"), {
-            // This describes the location of the map by lat and long
-            center: { lat: lati, lng: long },
-            zoom: 3.5,
-          });
-        }
-      </script>
+      <div id="map"></div>
       <form>
-        <h1></h1>
+        <h1>KEY</h1>
+        <hr />
+        <h4>Type of Pollution</h4>
+        <h4>Species</h4>
       </form>
     </main>
     <script
@@ -47,6 +49,5 @@
       async
       defer
     ></script>
-    <!-- <script src="js/index.js"></script> -->
   </body>
 </html>
