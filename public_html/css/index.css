@@ -36,14 +36,24 @@ header {
 }
 
 main {
+  display: block;
   position: absolute;
   top: 15vh;
+  height: 85vh;
+  width: 100vw;
   text-align: center;
 }
 
-main h6 {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: medium;
-  font-weight: 600;
+#map {
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 27vw;
+  padding: 7vh;
+  height: 40vh;
+  width: 40vw;
+  border-radius: 5vh;
+}
+i {
+  font-size: 3vh;
+  padding: 1vh;
 }
